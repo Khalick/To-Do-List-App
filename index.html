@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <STyle>
+        *{
+            margin: 0PX;
+            padding: 0px;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+       .container{
+        width: 1100px;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #153677, #4e085f);
+        padding: 10px;
+       }
+       .todo{
+        width: 400px;
+        max-width: 540px;
+        background: white;
+        margin: 100px auto 90px;
+        padding: 80px 30px 170px;
+        border-radius: 10px;
+       }
+       .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #edeef0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+       }
+       input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+       }
+       button{
+        cursor: pointer;
+        background-color: #b4341d;
+        border-radius: 15px;
+        width: 100px;
+        padding:10px ;
+       }
+       ul li{
+        padding: 12px 8px 12px;
+        cursor: pointer;
+       }
+       ul li::before{
+        content: '';
+        position: absolute;
+        height: 480px;
+        width: 480px;
+        background-size: 60px;
+        background-position: center;
+        padding: 50px;
+
+       }
+       ul li.checked{
+        color: #b4341d;
+        text-decoration: line-through;
+       }
+       ul li span{
+     position: relative;
+        right: 400px;
+        top: 5px;
+        left: 15px;
+        width: 20px;
+        height: 20px;
+        font-size: 25px;
+        color: rgb(218, 30, 30);
+        line-height: 40px;
+        text-align: center;
+        border-radius: 70%;
+       }
+       ul li span:hover{
+        background: #8898b9;
+      ;
+
+       }
+    </STyle>
+    <title>To Do List</title>
+    <body>
+        <div class="container">
+            <div class="todo">
+                <h2>To Do List</h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                
+                <ul id="list-containers">
+                    <!-- <li class="checked">task 1</li>
+                    <li>task 2</li>
+                    <li>task 3</li> -->
+                </ul>
+                
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
