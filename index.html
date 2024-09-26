@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <link rel="https://img.icons8.com/nolan/64/to-do.png" type="image/x-icon">
+    <link rel="icon" href="https://img.icons8.com/nolan/64/to-do.png" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
     <STyle>
         *{
@@ -84,9 +84,14 @@
        }
     </STyle>
         <script>
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('To-Do-List-App/servicewoker.js', { scope: 'https://khalick.github.io/To-Do-List-App/' });
-}
+navigator.serviceWorker.register('/To-Do-List-App/serviceworker.js', { scope: '/To-Do-List-App/' })
+.then(function(registration) {
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+})
+.catch(function(error) {
+    console.log('ServiceWorker registration failed: ', error);
+});
+
 </script>
     <title>To Do List</title>
     <body>
