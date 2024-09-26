@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "TO DO LIST",
+    "short_name": "TO DO LIST",
+    "description": "This app accepts task and mark them when done",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "https://img.icons8.com/nolan/64/to-do.png"
+            "sizes": "64x64"
+        }
+    ]
+}
